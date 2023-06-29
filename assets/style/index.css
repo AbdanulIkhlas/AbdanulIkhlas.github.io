@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    /* background-color: #1e252f; */
+    background-color: #080c11;
+    color: #EDEDED;
+    font-family: 'Hind', sans-serif;
+}
+
+/*! start : style header  */
+
+.logo {
+    border: 1px solid white;
+    width: 4rem;
+    height: 4rem;
+}
+
+.logo img {
+    width: 3.9rem;
+    height: 3.9rem;
+}
+
+header {
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+}
+
+nav {
+    border: 1px solid white;
+    display: flex;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+nav ul li {
+    border-bottom: 3px solid #e82214;
+}
+
+nav ul a {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #EDEDED;
+    text-decoration: none;
+}
+
+/** end : style header */

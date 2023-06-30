@@ -136,17 +136,24 @@ nav ul li a::after {
     transform-origin: right;
 }
 
+nav a.active {
+    border-top: 2px solid #e82214;
+    border-bottom: 2px solid #e82214;
+    color: red;
+}
+
 /** end : style header */
 /* ----------------------------------------------------------------- */
 /*! ----- start : style main (home-section) */
+#home {
+    display: flex;
+    align-items: center;
+}
 
 #home section {
     width: 45vw;
     padding-inline: 20px;
-    border: 1px solid white;
 }
-
-
 
 #home section h1 {
     font-size: 20pt;
@@ -160,20 +167,37 @@ nav ul li a::after {
     color: #e82214;
 }
 
+section .icon {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.insta,
+.github {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e82214;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.insta:hover,
+.github:hover {
+    box-shadow: 0 0 10px 3px #e82214;
+    transition: .15s;
+}
+
 /** ----- end : style main (home-aside)*/
 /* ----------------------------------------------------------------- */
 /*! ----- start : style main (home-aside) */
 
-#home {
-    border: 1px solid burlywood;
-    display: flex;
-    align-items: center;
-}
-
 #home aside {
     position: relative;
     width: 55vw;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +209,6 @@ nav ul li a::after {
     z-index: -99;
     width: 100%;
     height: 500px;
-    filter: drop-shadow(0 2px 10px 3px #e82214);
 }
 
 #home aside img {

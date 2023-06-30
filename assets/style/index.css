@@ -100,3 +100,48 @@ nav ul li a::after {
 }
 
 /** end : style header */
+
+/*! start : style main */
+
+#home {
+    border: 1px solid burlywood;
+    display: flex;
+    align-items: center;
+}
+
+#home section {
+    width: 40vw;
+    padding-inline: 20px;
+    border: 1px solid white;
+}
+
+#home aside {
+    width: 60vw;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#home aside img {
+    height: 528.6px;
+    width: 475.6px;
+    border: 1px solid white;
+
+}
+
+.foto {
+    display: flex;
+    border: 1px solid white;
+}
+
+#home aside .garis {
+    width: 700px;
+    height: 10px;
+    background-color: #e82214;
+    border: 1px solid white;
+
+}
+
+
+/** end : style main */

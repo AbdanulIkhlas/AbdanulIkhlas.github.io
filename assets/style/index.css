@@ -18,12 +18,41 @@ ul {
 }
 
 body {
-    /* background-color: #1e252f; */
     background-color: #080c11;
     color: #EDEDED;
     font-family: 'Hind', sans-serif;
+    padding-inline: 20px;
 }
 
+/*! start : style scrollbar */
+/*? Untuk WebKit (Chrome, Safari)   */
+
+::-webkit-scrollbar {
+    /*? Ukuran lebar scroll bar */
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*? Warna scroll bar */
+    background-color: #e82214;
+}
+
+/*? Untuk Firefox */
+
+* {
+    /*? Ukuran lebar scroll bar */
+    scrollbar-width: thin;
+    /*? Warna scroll bar */
+    scrollbar-color: #e82214 transparent;
+}
+
+*::-webkit-scrollbar-track {
+    /*? Warna latar belakang track */
+    background-color: transparent;
+}
+
+/** end : style scrollbar  */
+/* ----------------------------------------------------------------- */
 /*! start : style header  */
 
 .logo {
@@ -41,6 +70,14 @@ header {
     /* border-bottom: .1px solid #e82214; */
     padding: 5px 10px;
     display: flex;
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #0a0e1423;
+    backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 nav {
@@ -100,8 +137,32 @@ nav ul li a::after {
 }
 
 /** end : style header */
+/* ----------------------------------------------------------------- */
+/*! ----- start : style main (home-section) */
 
-/*! start : style main */
+#home section {
+    width: 45vw;
+    padding-inline: 20px;
+    border: 1px solid white;
+}
+
+
+
+#home section h1 {
+    font-size: 20pt;
+}
+
+#home section p {
+    font-size: 16pt;
+}
+
+.red-text {
+    color: #e82214;
+}
+
+/** ----- end : style main (home-aside)*/
+/* ----------------------------------------------------------------- */
+/*! ----- start : style main (home-aside) */
 
 #home {
     border: 1px solid burlywood;
@@ -109,39 +170,39 @@ nav ul li a::after {
     align-items: center;
 }
 
-#home section {
-    width: 40vw;
-    padding-inline: 20px;
-    border: 1px solid white;
-}
-
 #home aside {
-    width: 60vw;
+    position: relative;
+    width: 55vw;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
 
+#home aside svg {
+    position: absolute;
+    top: 3rem;
+    z-index: -99;
+    width: 100%;
+    height: 500px;
+    filter: drop-shadow(0 2px 10px 3px #e82214);
 }
 
 #home aside img {
-    height: 528.6px;
     width: 475.6px;
-    border: 1px solid white;
-
+    height: 528.6px;
+    margin-bottom: 6px;
 }
 
 .foto {
     display: flex;
-    border: 1px solid white;
 }
 
 #home aside .garis {
-    width: 700px;
-    height: 10px;
+    width: 50vw;
+    height: 8px;
     background-color: #e82214;
-    border: 1px solid white;
-
+    box-shadow: 0 2px 10px 3px #e82214;
 }
 
-
-/** end : style main */
+/** ----- end : style main (home-aside)*/

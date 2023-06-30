@@ -30,6 +30,7 @@ body {
 ::-webkit-scrollbar {
     /*? Ukuran lebar scroll bar */
     width: 3px;
+    height: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -50,6 +51,7 @@ body {
     /*? Warna latar belakang track */
     background-color: transparent;
 }
+
 
 /** end : style scrollbar  */
 /* ----------------------------------------------------------------- */
@@ -101,6 +103,10 @@ nav ul a {
     color: #EDEDED;
     text-decoration: none;
     position: relative;
+}
+
+nav .menu-icon {
+    display: none;
 }
 
 /*? ----- style navbar hover */
@@ -229,3 +235,122 @@ section .icon {
 }
 
 /** ----- end : style main (home-aside)*/
+
+/*! ---- Responsive @media ----  */
+@media screen and (max-width: 480px) {
+
+    body {
+        margin-right: -100px;
+    }
+
+    main article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*! start : style scrollbar */
+    /*? Untuk WebKit (Chrome, Safari)   */
+
+    ::-webkit-scrollbar {
+        /*? Ukuran lebar scroll bar */
+        width: 1px;
+        height: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        /*? Warna scroll bar */
+        background-color: #e82214;
+    }
+
+    /*? Untuk Firefox */
+
+    * {
+        /*? Ukuran lebar scroll bar */
+        scrollbar-width: thin;
+        /*? Warna scroll bar */
+        scrollbar-color: #e82214 transparent;
+    }
+
+    *::-webkit-scrollbar-track {
+        /*? Warna latar belakang track */
+        background-color: transparent;
+    }
+
+
+    /** end : style scrollbar  */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style header -----  */
+    header {
+        background-color: #0a0e14;
+        width: 100%;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        flex-direction: column;
+        width: 200px;
+        z-index: 99;
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: flex;
+        font-size: 30pt;
+        cursor: pointer;
+    }
+
+    nav ul.active {
+        background-color: #080c11;
+        border: 1px solid white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+
+    /** ----- end : style header ----- */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style home (aside) ----- */
+    #home aside {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    #home aside svg {
+        top: 1rem;
+    }
+
+    #home aside img {
+        width: 375.6px;
+        height: 428.6px;
+    }
+
+    #home aside .garis {
+        width: 80vw;
+    }
+
+    /** end : style home (aside) */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style home (section) ----- */
+    #home section {
+        width: 80vw;
+        padding-block: 10px;
+        margin-bottom: 20px;
+    }
+
+    /** end : style home (section) */
+    /* -------------------------------------------------------- */
+
+}

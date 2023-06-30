@@ -35,7 +35,7 @@ function updateActiveMenuItem() {
 //? Mendapatkan posisi scroll saat ini
 const scrollPosition = window.scrollY;
 
-//? Loop melalui setiap item menu dan mengecek apakah bagian terkait dalam tampilan
+//! Loop melalui setiap item menu dan mengecek apakah bagian terkait dalam tampilan
 for (let i = 0; i < menuItems.length; i++) {
     const sectionId = menuItems[i].getAttribute('href').substring(1);
     const section = document.getElementById(sectionId);
@@ -53,5 +53,14 @@ for (let i = 0; i < menuItems.length; i++) {
 }
 }
 
-//? Menambahkan event listener ke scroll window
+//! Menambahkan event listener ke scroll window
 window.addEventListener('scroll', updateActiveMenuItem);
+
+
+//! Action ketika hamburger menu di klik
+const menuIcon = document.querySelector('.menu-icon');
+const navList = document.querySelector('nav ul ');
+
+menuIcon.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});

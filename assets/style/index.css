@@ -283,11 +283,11 @@ section .icon {
 
 #about section {
     width: 55vw;
-    padding: 100px 80px;
+    padding: 80px;
 }
 
 #about section h1 {
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -298,6 +298,66 @@ section .icon {
     display: flex;
     gap: 10px;
 }
+
+/** ----- end : style main (about-section)*/
+/* ----------------------------------------------------------------- */
+/*! ----- start : style main (project-section) */
+
+#project {
+    margin-bottom: 200px;
+    margin-top: 100px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+#project section {
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+#project section h1 {
+    font-size: 30pt;
+    margin-bottom: 30px;
+}
+
+#project section .container-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#project section .container-card .card img {
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#project section .container-card .card {
+    width: 25vw;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #1b2025;
+    box-shadow: 0 0 10px 2px #66707c;
+}
+
+.card button {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #0a0e14;
+    border: 1px solid white;
+    color: white;
+    font-size: 12pt;
+}
+
+
 
 /** ----- end : style main (about-section)*/
 

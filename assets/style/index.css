@@ -304,7 +304,7 @@ section .icon {
 /*! ----- start : style main (project-section) */
 
 #project {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     margin-top: 100px;
     height: 90vh;
     display: flex;
@@ -364,13 +364,25 @@ section .icon {
     cursor: pointer;
 }
 
-
-
 /** ----- end : style main (about-section)*/
+/* ----------------------------------------------------------------- */
+/*! ----- start : style footer */
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #11161dd1;
+    text-align: center;
+    line-height: 8vh;
+}
 
 
-
-
+/** ----- end : style footer/
 
 
 

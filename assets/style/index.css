@@ -429,5 +429,40 @@ section .icon {
 
     /** end : style home (section) */
     /* -------------------------------------------------------- */
+    /*! ----- start : style about (aside) ----- */
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about aside .background {
+        width: 90vw;
+    }
+
+    #about aside img {
+        width: 375.6px;
+    }
+
+    /** end : style about (aside) */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style about (section) ----- */
+
+    #about section {
+        width: 100vw;
+        padding: 50px 40px;
+    }
+
+    #about section h1 {
+        text-align: center;
+    }
+
+    #about section p {
+        text-align: center;
+    }
+
+    /** end : style about (aside) */
+    /* -------------------------------------------------------- */
 
 }

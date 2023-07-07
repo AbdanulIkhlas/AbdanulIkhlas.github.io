@@ -18,6 +18,8 @@ ul {
 }
 
 body {
+    position: relative;
+    z-index: -999;
     background-color: #080c11;
     color: #EDEDED;
     font-family: 'Hind', sans-serif;
@@ -304,7 +306,6 @@ section .icon {
 /*! ----- start : style main (project-section) */
 
 #project {
-    margin-bottom: 50px;
     margin-top: 100px;
     height: 90vh;
     display: flex;
@@ -348,6 +349,7 @@ section .icon {
     box-sizing: border-box;
     background-color: #1b2025;
     box-shadow: 0 0 10px 2px #66707c;
+    overflow: hidden;
 }
 
 .card button {
@@ -369,7 +371,7 @@ section .icon {
 /*! ----- start : style footer */
 
 footer {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -396,7 +398,8 @@ footer {
 @media screen and (max-width: 480px) {
 
     body {
-        margin-right: -100px;
+        margin: 0;
+        padding: 0;
     }
 
     main article {
@@ -514,10 +517,12 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
 
+
     #about aside .background {
-        width: 90vw;
+        width: 60vw;
     }
 
     #about aside img {
@@ -531,17 +536,244 @@ footer {
     #about section {
         width: 100vw;
         padding: 50px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 50px;
     }
 
-    #about section h1 {
-        text-align: center;
-    }
-
-    #about section p {
-        text-align: center;
+    #about section .email {
+        margin: 0;
+        padding: 0;
     }
 
     /** end : style about (aside) */
     /* -------------------------------------------------------- */
+    /*! ----- start : style project (section) ----- */
+
+    #project {
+        margin: 0;
+        height: 180vh;
+    }
+
+    #project section {
+        padding: 0;
+    }
+
+    #project section h1 {
+        margin: 0;
+    }
+
+    #project section .container-card {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100vw;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    #project section .container-card .card img {
+        width: 200px;
+    }
+
+    #project section .container-card .card {
+        width: 300px;
+        height: 280px;
+        font-size: 10pt;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card button {
+        left: 70px;
+        bottom: 20px;
+        width: 150px;
+        font-size: 10pt;
+    }
+
+    .card h2 {
+        font-size: 15pt;
+        margin: 0;
+    }
+
+    /** end : style project (aside) */
+}
+
+/* -------------------------------------------------------- */
+/*! ---- Responsive @media 768px----  */
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*! start : style scrollbar */
+    /*? Untuk WebKit (Chrome, Safari)   */
+
+    ::-webkit-scrollbar {
+        /*? Ukuran lebar scroll bar */
+        width: 1px;
+        height: 1px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        /*? Warna scroll bar */
+        background-color: #e82214;
+    }
+
+    /*? Untuk Firefox */
+
+    * {
+        /*? Ukuran lebar scroll bar */
+        scrollbar-width: thin;
+        /*? Warna scroll bar */
+        scrollbar-color: #e82214 transparent;
+    }
+
+    *::-webkit-scrollbar-track {
+        /*? Warna latar belakang track */
+        background-color: transparent;
+    }
+
+
+    /** end : style scrollbar  */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style home ----- */
+
+    #home {
+        padding-inline: 40px;
+    }
+
+    #home aside {
+        margin-bottom: 20px;
+    }
+
+    #home aside svg {
+        top: 1rem;
+    }
+
+    #home aside img {
+        width: 375.6px;
+        height: 428.6px;
+    }
+
+    #home aside .garis {
+        width: 40vw;
+    }
+
+    #home section {
+        margin-top: 40px;
+    }
+
+    #home section h1 {
+        font-size: 15pt;
+    }
+
+    #home section p {
+        font-size: 14pt;
+    }
+
+
+    /** end : style home */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style about ----- */
+
+    #about {
+        padding-inline: 40px;
+        box-sizing: border-box;
+    }
+
+    #about aside .background {
+        width: 40vw;
+    }
+
+    #about .background img {
+        width: 380px;
+    }
+
+    #about section {
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    #about section h1 {
+        margin-top: 20px;
+        font-size: 16pt;
+        text-align: center;
+    }
+
+    #about section p {
+        font-size: 11pt;
+        text-align: center;
+    }
+
+    #about section .email {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    /** end : style about */
+    /* -------------------------------------------------------- */
+    /*! ----- start : style project (section) ----- */
+
+    #project {
+        margin: 0;
+        padding-top: 50px;
+        height: 200vh;
+    }
+
+    #project section {
+        padding: 0;
+    }
+
+    #project section h1 {
+        margin: 0;
+    }
+
+    #project section .container-card {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100vw;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    #project section .container-card .card img {
+        width: 200px;
+    }
+
+    #project section .container-card .card {
+        width: 300px;
+        height: 280px;
+        font-size: 10pt;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card button {
+        left: 70px;
+        bottom: 20px;
+        width: 150px;
+        font-size: 10pt;
+    }
+
+    .card h2 {
+        font-size: 15pt;
+        margin: 0;
+    }
+
+    /** end : style project (aside) */
 
 }

@@ -276,7 +276,6 @@ section .icon {
 
 #about aside img {
     width: 500px;
-
 }
 
 /** ----- end : style main (about-aside)*/
@@ -327,7 +326,7 @@ section .icon {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
 }
 
@@ -521,8 +520,13 @@ footer {
     }
 
 
+    #about aside {
+        width: 100vw;
+    }
+
     #about aside .background {
-        width: 60vw;
+        width: 100%;
+        border: 1px solid yellow;
     }
 
     #about aside img {

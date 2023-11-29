@@ -770,7 +770,7 @@ video {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .hp\:right-9 {
     right: 2.25rem;
   }

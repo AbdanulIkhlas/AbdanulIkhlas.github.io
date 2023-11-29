@@ -19,8 +19,8 @@ module.exports = {
         'socialShadow':'0 0 20px #fffb01'
       },
       screens: {
-        'hp':{'max': '360px'},
-        // => @media (max-width: 360px) { ... }
+        'hp':{'max': '420px'},
+        // => @media (max-width: 420px) { ... }
         'xl': {'max': '1279px'},
         // => @media (max-width: 1279px) { ... }
         'lg': {'max': '1023px'},

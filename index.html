@@ -16,8 +16,8 @@
 </head>
 
 <body class="bg-secondaryColor">
-    <header class="flex w-full hp:flex-col">
-        <aside class="w-[27%] bg-customYellow hp:w-full">
+    <header id="home" class="flex w-full hp:flex-col">
+        <aside class="w-[27%] bg-customYellow hp:w-full border-b-4 border-primaryColor">
             <!-- foto -->
             <section class="w-full box-border h-[400px] relative hp:h-[240px]">
                 <div
@@ -31,8 +31,8 @@
                 </div>
             </section>
         </aside>
-        <section
-            class="flex justify-end pr-40 w-[73%] box-border bg-primaryColor text-white lg:pr-10 hp:w-full hp:p-1 hp:pt-24">
+        <section class="flex justify-end pr-40 w-[73%] box-border bg-primaryColor text-white border-b-4 border-customYellow
+             lg:pr-10 hp:w-full hp:p-1 hp:pt-24">
             <!-- container home -->
             <div class="flex flex-col justify-center h-full text-right p-5 box-border hp:text-left">
                 <!-- text text -->
@@ -77,10 +77,22 @@
             </div>
         </section>
     </header>
-    <nav class="w-full py-5  text-white text-center text-md border">
-        testing
+    <nav class="flex items-center justify-center gap-7 w-full m-auto py-5 text-white text-center text-md
+        bg-[#121d4a] shadow-md shadow-gray-700 box-border hp:w-full">
+        <div class="flex h-full items-center justify-center ">
+            <div class="border border-customYellow w-72"></div>
+        </div>
+        <ul class="flex justify-center gap-20 w-max font-poppins text-md px-3 font-bold">
+            <li class="hover:text-red-600 hover:duration-300"><a href="#home">Home</a></li>
+            <li class="hover:text-red-600 hover:duration-300"><a href=" #about">About</a></li>
+            <li class="hover:text-red-600 hover:duration-300"><a href=" #experience">Experience</a></li>
+            <li class="hover:text-red-600 hover:duration-300"><a href=" #project">Project</a></li>
+        </ul>
+        <div class="flex h-full items-center justify-center ">
+            <div class="border border-customYellow w-72"></div>
+        </div>
     </nav>
-    <main></main>
+    <main class="w-[75%] border h-[100vh] m-auto"></main>
     <footer></footer>
 </body>
 
